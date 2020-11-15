@@ -14,6 +14,6 @@ The resulting HTML file is to be opened with the [Sciter](https://github.com/c-s
 
 ![preview1](preview1.gif)
 
-**Result**:
+**Result** upon opening the resulting HTML file with `scapp.exe`:
 
 ![preview2](preview2.gif)
