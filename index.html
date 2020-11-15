@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="template.js"></script>
+    <script src="script.js"></script>
+    <script type="module"
+      src="https://unpkg.com/@deckdeckgo/drag-resize-rotate@1.0.0-beta.3/dist/deckdeckgo-drag-resize-rotate/deckdeckgo-drag-resize-rotate.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/@deckdeckgo/drag-resize-rotate@1.0.0-beta.3/dist/deckdeckgo-drag-resize-rotate/deckdeckgo-drag-resize-rotate.js"></script>
+  </head>
+
+  <body>
+    <div class="window container">
+
+      <div class="menu">
+        <button id="save" style="height: calc(100% - 2px); margin: 1px;">Save</button>
+        <button disabled style="height: calc(100% - 2px); margin: 1px;">Delete</button>
+      </div>
+
+      <div class="window-body container">
+
+        <div class="main list-container">
+          <ul class="tree-view">
+            <li><a href="javascript:link('button');">button</a></li>
+            <li><a href="javascript:link('textbox');">textbox</a></li>
+            <li><a href="javascript:link('radio');">radio</a></li>
+          </ul>
+        </div>
+
+        <div class="form-container">
+          <deckgo-drr drag="none" resize="true" rotation="false"
+            style="--unit:px; --width:50; --height:25; --top:0; --left:0; --rotate:0deg;">
+            <div class="window" style="display: block; margin: auto; max-width: 100%; max-height: 100%;">
+              <div class="title-bar">
+                <div class="title-bar-text">Caption</div>
+                <div class="title-bar-controls">
+                  <button aria-label="Minimize"></button>
+                  <button aria-label="Maximize"></button>
+                  <button aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+              </div>
+            </div>
+          </deckgo-drr>
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+
+</html>
